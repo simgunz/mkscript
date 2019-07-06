@@ -5,7 +5,7 @@ realpath_portable() {
 }
 
 mydir=$(dirname $(realpath_portable "$0"))
-bindir=$HOME/bin
+bindir=$HOME/.local/bin
 
 if [[ ! -d "$bindir" ]]; then
     mkdir "$bindir"
